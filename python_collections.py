@@ -280,3 +280,5 @@ print(dictB)
 # update()	     => Updates the dictionary with the specified key-value pairs
 # values()	     => Returns a list of all the values in the dictionary
 
+
+print(dictA.keys())
