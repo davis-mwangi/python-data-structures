@@ -17,7 +17,7 @@ def minCoins(coins, n):
     # Initiliaze all table values as Infinite
     for i in range(1,n+1):
         table[i] = sys.maxsize
-    print(table)
+
     # Compute minimun coins required for all values from 1 to n
     for i in range(1, n + 1):
         # Go through all coins smaller than i
@@ -26,9 +26,9 @@ def minCoins(coins, n):
                 result = table[i - coins[j]]
                 if result != sys.maxsize and  1 + result < table[i] :
                     table[i] = result + 1
-        print(table)            
+
     return table[n]                 
         
-
-x = minCoins([9,6,5,1], 11)    
-print(x)
+if __name__ == "__main__":
+    x = minCoins([9,6,5,1], 11)    
+    print(x)
