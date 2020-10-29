@@ -24,6 +24,7 @@ def fibonacci(n):
     else:
         temp_fib = fibonacci(n -1) + fibonacci(n -2)
         fibarray.append(temp_fib)
+        print(fibarray)
         return temp_fib    
 
 y = fibonacci(9)
