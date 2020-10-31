@@ -1,7 +1,7 @@
 def dups(arr):
     # Return if empty or single item
     if len(arr) <= 1:
-       return arr
+       return []
 
     temp_dict ={}
     set_x = set()
@@ -23,6 +23,9 @@ def dups(arr):
 
 
 x = dups([])
+print(x)
+
+x= dups([1])
 print(x)
 
 x = dups([1,2,3])
